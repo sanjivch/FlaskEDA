@@ -1,11 +1,12 @@
 from flask import Flask
-
+import datetime
+# now = datetime.datetime.now()
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello():
-    return 'Hello, world'
+    return datetime.datetime.now()
 
 
 @app.route('/test')
