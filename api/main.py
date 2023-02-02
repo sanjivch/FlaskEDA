@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return datetime.datetime.now()
+    return str(datetime.datetime.now())
 
 
 @app.route('/test')
